@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    flex-direction: column; /* chamnge flex direction from default row to column */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* creates space between left links and right links for both the header and the footer */
+    padding: 20px; /* spaces between links on each side */
+    background-color: #1f2937;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+ul {
+    list-style: none; /* removes bullet points */
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px /* remove margin and padding to make look like horizonatl list */
+}
+
+.left-links a {
+    color: #f9faf8;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.right-links a {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none; /* this removes the line under our links */
+}
+
+.section-one {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f2937;
+    padding: 100px;
+}
+
+.left-content {
+    padding-right: 50px;
+}
+
+.hero-main {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+    margin-bottom: 20px;
+}
+
+.hero-secondary {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin-bottom: 20px;
+}
+
+.signup1 {
+    background-color: #3882f6;
+    color: #f9faf8;
+    font-weight: bold;
+    padding: 10px 32px;
+    border: none;
+    border-radius: 8px; /* rounds the courners of the button */
+    cursor: pointer; /* cursor changes to make it appear clickable */
+}
+
+.placeholder-image {
+    width: 500px;
+    height: 250px;
+    background-color: #6d747d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #e5e7eb;
+}
+
+.section-two {
+    text-align: center;
+    padding: 50px 100px;
+    background-color: #f9faf8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.information-header {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+    padding-bottom: 50px;
+}
+
+.information-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px; /* spacing between boxes horizontally and vertically */
+}
+
+.blue-box {
+    width: 150px;
+    height: 150px;
+    border: 4px solid #3882f6;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 16px;
+    color: #1f2937;
+    text-align: center;
+}
+
+/* to center quote:
+
+display: flex;
+align-items: center;
+justify-content: center;
+  
+*/
+
+/* General reset and layout */
