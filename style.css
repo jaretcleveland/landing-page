@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Roboto, sans-serif;
@@ -102,8 +108,15 @@ a {
 .information-content {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px; /* spacing between boxes horizontally and vertically */
+    flex-wrap: nowrap;
+    gap: 60px; /* spacing between boxes horizontally and vertically */
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
 }
 
 .blue-box {
@@ -120,12 +133,75 @@ a {
     text-align: center;
 }
 
-/* to center quote:
+.section-three {
+    background-color: #e5e7eb;
+    padding: 100px 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-display: flex;
-align-items: center;
-justify-content: center;
-  
-*/
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1f2937; 
+    max-width: 800px; /* limits width so it doesn’t stretch full screen */
+    text-align: left; /* keeps it aligned like a paragraph */
+}
 
-/* General reset and layout */
+.signature {
+    align-self: center; /* pushes the signature to the right side */
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;     /* matches quote width */
+    text-align: right;
+}
+
+.section-four {
+    background-color: #3882f6;
+    margin: 50px auto;
+    padding: 50px 100px;
+    border-radius: 10px;
+    color: #f9faf8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    gap: 10px;
+}
+
+.cta-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.action {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.small-text {
+    font-size: 16px;
+}
+
+.signup2 {
+    background-color: transparent;
+    color: #f9faf8;
+    border: 2px solid #f9faf8;
+    border-radius: 8px;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: #1f2937;
+    color: #f9faf8;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+}
